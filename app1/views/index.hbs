@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<form action="/process" method="POST">
+  <input type="hidden" name="_csrf" value="{{csrfToken}}">
+  
+  name: <input type="text" name="name">
+  <button type="submit">Submit</button>
+</form>
